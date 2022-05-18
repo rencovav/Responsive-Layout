@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Part 1</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="logo"> 
+            <a href="index.html">logo</a>
+          </div>
+          <div class="navbar">
+            <ul class="nav">
+              <li><a href="#">Homepage</a></li>
+              <li><a href="#">O nás</a></li>
+              <li><a href="#">Novinky</a></li>
+              <li><a href="#">Galerie</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <a href="#"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-sidebar">
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <div class="box-1-items">
+              <div class="box-1-item">
+                <p>box 1</p>
+              </div>
+              <div class="box-1-item">
+                <p>box 2</p>
+              </div>
+              <div class="box-1-item">
+                <p>box 2</p>
+              </div>
+              <div class="box-1-item">
+                <p>box 3</p>
+              </div>
+            </div>
+            <div class="box-2-items">
+              <div class="box-2-item">
+                <p>box 1</p>
+              </div>
+              <div class="box-2-item">
+                <p>box 2</p>
+              </div>
+              <div class="box-2-item">
+                <p>box 2</p>
+              </div>
+            </div>
+            <div class="box-3-items">
+              <div class="box-3-item">
+                <span></span>
+                <p>box 1</p>
+              </div>
+              <div class="box-3-item">
+                <span></span>
+                <p>box 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            sidebar
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-item">
+            <p>box 1</p>
+          </div>
+          <div class="footer-item">
+            <p>box 2</p>
+          </div>
+          <div class="footer-item">
+            <p>box 3</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggler = document.querySelector(".hamburger");
+      const menu = document.querySelector(".nav");
+      navToggler.addEventListener("click", navToggle);
+      function navToggle() {
+         menu.classList.toggle("active");  
+      } 
+    </script>
+  </body>
+</html>
